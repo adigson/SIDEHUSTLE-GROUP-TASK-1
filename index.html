@@ -18,35 +18,107 @@
   background-size: cover; /* Resize the background image to cover the entire container **/
   height: 500px;
     }
-    /*
-  background-image: url("bg15.jpg"); /* The image used */
-  /*background-color: #cccccc; /* Used if the image is unavailable */
-  /*height: 500px; /* You must set a specified height */
-  
+    * {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card {
+    margin-top: 15%;
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.25);
+    }
+    .dancer-image {
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+          }
+    .down {
+      background: aquamarine;
+      margin-bottom: 0%;
+    }
+      
+    .all {
+      align-content: center;
+      background: cornflowerblue;
+      margin-top: -10%;
+      margin-right:15%;
+      margin-left: 15%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    .all a {
+      color: aquamarine;
+      font-weight: bold;
+    }
+
+    #box h5 {
+      font-weight: bold;
+    }
+    button {
+    display: inline-block;
+    background: teal;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    pointer-events: visiblePainted;
+}                
+button:hover {
+    background: #563434;
+}
+center a  {text-decoration: none;}
+/**.cancel {
+  margin-top: -5%; margin-bottom: -5%;
+}*/
   </style>
 </head>
-<body> 
+<body>
+<div class="container">
+  <div class="card">
+    <div class="inner-box">
+      <div class="dancer-image">
+        <img src="images/musicaltop2.jpg" width="400px" height="200px">
+      </div>
+<div class="down">
+  <h1 style="padding-top: 5%; text-align: center;">Order Summary</h1><br>
 
+  <p style="padding-right: 15%; padding-left: 15%; padding-bottom: 10%; line-height: 2; text-align: center;">You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+<div class="three-items">
+  <div class="all" id="box">
+    <center>
+    <img src="images/hurdlemusign.png" width="20px" height="20px"><br> <h3>Annual Plan</h3>
+      <p>$59.99/year</p><br>
+      <a href="">Change</a><br>
+      </center>
+  </div>
+</div>
+<center>
+  <button>Proceed to Payment</button><br>
+  <a href="" class="cancel">Cancel Order</a>
+</center>
 
-  
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
+  <footer id="footer">
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <h4><span style="float:left; background-color: aquamarine;">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a></span></a></h4> 
+    <h4><span style="float:right; background-color: aquamarine;">Coded by<a href="#">SH 0.4 Group 80.</span></a></h4>
+  </footer>
+
   </div>
   </div>
+  </div>
+  </div>
+</div> 
 </body>
 
 </html>
